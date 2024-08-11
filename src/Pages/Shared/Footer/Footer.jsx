@@ -1,9 +1,11 @@
 import { MdLocationPin } from "react-icons/md";
+import logo from '../../../assets/logo.png'
+
 const Footer = () => {
     return (
         <div className="bg-black">
-            <div className="text-white flex justify-between ">
-                <div>Logo</div>
+            <div className="text-white flex justify-between hero-content flex-col lg:flex-row">
+                <div><img className="m-5" height={80} width={80} src={logo} alt="" /></div>
                 <div>
                     <p>Location</p>
                     <button className="btn btn-outline btn-success rounded-full mb-4 flex">

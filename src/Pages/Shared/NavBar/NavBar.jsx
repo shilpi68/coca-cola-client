@@ -1,12 +1,16 @@
-
+import { Link } from 'react-router-dom';
+import logo from '../../../assets/logo.png'
 
 const NavBar = () => {
     const navOptions =<>
-     <li><a>Item 1</a></li>
+     <li><Link to="/">Home</Link></li>
+     <li><Link to="/about">About Us</Link></li>
+     <li><Link to="/shop">Shop</Link></li>
+     <li><Link to="/history">Our History</Link></li>
     </>
     return (
         <>
-          <div className="navbar bg-base-100">
+          <div className="navbar fixed z-10 max-w-6xl mx-auto bg-black text-white bg-opacity-30 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +34,7 @@ const NavBar = () => {
        {navOptions}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+   <img height={80} width={80} src={logo} alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

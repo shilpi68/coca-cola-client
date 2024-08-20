@@ -6,7 +6,11 @@ const FirstBottle = () => {
     return (
         <section>
             <SectionTitle Heading='First Bottle'></SectionTitle>
-            <div  className="mt-10 flex hero-content flex-col lg:flex-row gap-10">
+            <div
+            data-aos="fade-left" 
+            data-aos-easing="linear"
+            data-aos-duration="1000" 
+             className="mt-10 flex hero-content flex-col lg:flex-row gap-10">
             <div><div className="card bg-base-100 w-96 shadow-xl  flex-1">
                 <div className="card-body">
                     <h2 className="card-title font-bold text-2xl">Coca‑Cola’s First Bottle</h2>
@@ -15,7 +19,7 @@ const FirstBottle = () => {
                          in 1915 and turned into one of the most famous shapes in the world.</p>
                     <Link to='/bottleDetails'>
                     <div className="card-actions justify-end">
-                    <button className="btn btn-outline font-bold text-lg rounded-full btn-block">History of Coca-Cola Bottle</button>
+                    <button className="btn btn-outline font-bold text-lg rounded-full btn-block">Read More</button>
                     </div>
                     </Link>
                 </div>

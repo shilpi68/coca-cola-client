@@ -8,7 +8,10 @@ const Origin = () => {
         <SectionTitle
         Heading='Orign Coca-Cola'
         ></SectionTitle>
-         <div className="mt-10 flex hero-content flex-col lg:flex-row">
+         <div className="mt-10 flex hero-content flex-col lg:flex-row"
+         data-aos="fade-up" 
+         data-aos-easing="linear"
+         data-aos-duration="1000">
             <div className="flex-1 ">
                 <img className='w-96 h-96 border-8 rounded-xl ml-20' src={orginPic} alt="" />
             </div>

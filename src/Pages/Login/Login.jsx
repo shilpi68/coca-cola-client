@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 import { ImSpinner9 } from "react-icons/im";
+import SocialLogin from "../../component/SocialLogin/SocialLogin";
 
 
 const Login = () => {
@@ -87,6 +88,7 @@ const Login = () => {
                 </button>
               </div>
             </form>
+            <SocialLogin></SocialLogin>
             <p
               className="m-10  hover:bg-gradient-to-r from-indigo-300  to-pink-300  ">
               <small>New Here?<Link to='/signup'>Create an account</Link></small></p>
